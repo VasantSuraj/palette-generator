@@ -7,7 +7,7 @@
 body {
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
   background: #f5f5f4;
-  color: #c95d15;
+  color: #beaca0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,6 @@ header h1 {
 header p {
   color: #57534e;
 }
-
 kbd {
   background: #e7e5e4;
   border-radius: 4px;
