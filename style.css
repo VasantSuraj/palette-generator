@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #f5f5f4;
+  color: #1c1917;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 24px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #57534e;
+}
+
+kbd {
+  background: #e7e5e4;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 13px;
+}
+
+#palette {
+  flex: 1;
+  display: flex;
+  gap: 12px;
+  padding: 0 24px;
+  min-height: 320px;
+}
+
+.swatch {
+  flex: 1;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.swatch:hover {
+  transform: translateY(-4px);
+}
+
+.swatch .hex {
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 16px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.85);
+  color: #1c1917;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.swatch .lock {
+  border: none;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 6px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+footer {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+#generate {
+  background: #1c1917;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#generate:hover {
+  background: #44403c;
+}
+
+#toast {
+  color: #15803d;
+  font-weight: 600;
+  min-width: 120px;
+}
+
+@media (max-width: 640px) {
+  #palette {
+    flex-direction: column;
+  }
+  .swatch {
+    min-height: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
